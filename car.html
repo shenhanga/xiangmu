@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0}
+        /* img{width: 100px;} */
+        *{color:#000}
+        a{text-decoration: none;}
+        b.c {width:1190px;height:50px;background: #f3f3f3;margin-left:95px;
+       display: block;}
+        b.c a{color:#000; font-size:16px;line-height:50px ;display:block;width:100px;background:#ff3d3d;
+        margin-left:1100px;text-align: center;}
+        .margin{width:1190px;margin:0 auto;}
+       
+
+        #header{height:30px;line-height: 30px;background:#f7f7f7;}
+        #header .header-l{float:left;} 
+        
+        #header .header-l span:hover{text-decoration:underline;color:#ff3d3d;text-decoration:none;}
+
+        #header .header-l .wz{display:block;display:none;width:248px;
+        height:64px;border:1px solid #fff;background:#fff;}
+        #header .header-l .wz-hq{}
+        #header .header-l .wz .wz-l{padding-left:22px;float:left;}
+        #header .header-l .wz .wz-r{padding-left:22px;float:left;}
+        #header .header-l .wz .wz-l b{display:block;}
+        #header .header-l .wz .wz-r b{display:block;}
+
+        #header .header-r{float:right;}
+        #header .header-r a{display:block;float:left;padding:0 7px;}
+
+        #header .header-r a:hover{text-decoration:underline;color:#ff3d3d;text-decoration:none;}
+        #header .header-r span{display:block;width:65px;}
+        #header .header-r span.wdbl{position: relative;text-align: center}
+        #header .header-r span.wdbl:hover{background:#fff;width:63px;border:1px solid #ccc;
+            border-bottom:none;border-top:none;}
+        #header .header-r span.wdbl .wddd{width:63px;height:120px;border:1px solid #ccc;
+            position:absolute;background:#fff;display:none;border-top:none;left:-1px;}
+        #header .header-r span.wdbl .wddd p{height:24px;line-height: 24px;text-align: center;color:#111;}
+        #headerl{height:52px;margin:40px 0;}
+        #headerl b{float:left;margin-left:100px;margin-top:5px}
+        #headerl span{line-height: 52px;display:block;font-size:25px;float:left;margin-left:50px;
+            margin-top:23px}
+        table td img{width: 100px;}
+        table{margin:0 auto;margin-top:60px;background: #fffaf1;}
+        #footer{height:416px;width:100%;background:#f3f3f3;margin-top:100px;}
+        #footer .f1{width:200px;height:170px;padding:24px 0;float:left;margin:0 10px;}
+        #footer .f-t{float:left;margin-right:15px;}
+        #footer .f-qt{height:218px;}
+        #footer .xswm{float:left;}    
+        #footer .xswm p{font-size:13px;line-height:26px; }  
+        #footer .xswm h3{font-size:16px;color:#000;line-height: 40px; }   
+        #footer .f-b{margin-top:50px;}
+        #footer .f-b .f-b-t{text-align: center;line-height: 24px;color:#333;}
+        #footer .f-b .f-b-t span{margin:0 7px;}
+        #footer .f-b .f-b-c{text-align: center;line-height: 24px;color:#999;}
+        #footer .f-b .f-b-c span{margin:0 7px;}
+        #footer .f-b .f-b-b{text-align: center;line-height: 24px;color:#666;}
+        #footer .f-b .f-b-b-b{text-align: center;line-height: 24px;color:#666;}
+        #footer .f-b-b-b-b{margin-left:100px;}
+        #footer .f-b-b-b-b .f-z{float:left;}
+        #footer .f-b-b-b-b .f-z b{margin:0 10px;}
+    </style>
+</head>
+<body>
+        <div id=header>
+                <div class="margin">
+                    <div class="header-l">
+                       
+                        <span>百联集团旗下全渠道电商平台</span>
+                        <span>网站导航</span>
+                        <a href=""><span>消息</span></a>
+                    </div>
+        
+                    <div class="header-r">
+                      
+                        <a href="dl.html"><span>请登录</span></a>
+                        <a href=""><span>注册</span></a>
+                        <a href="#"><span>我的订单</span></a>
+                        <a href="#"><span class="wdbl">我的百联
+                                <div class="wddd">
+                                    <p>我的订单</p>
+                                    <p>我的订单</p>
+                                    <p>我的订单</p>
+                                    <p>我的订单</p>
+                                    <p>我的订单</p>
+                                </div>
+                            </span></a>
+                        <a href="#"><span>充值缴费</span></a>
+                        <a href="#"><span>客户服务</span></a>
+                        <a href="#"><span>掌声百联</span></a>
+                        <a href="#"><span>购物车</span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="headerl">
+                    <div class="margin">
+                        <b><img src="images/gwc.jpg"/> </b>  
+                        <span>购物车</span> 
+                    </div> 
+                </div>
+    <!-- <h2>这是购物车页面<a href="shop.html">继续购物</a></h2> -->
+    <table  width="1200" align="center">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="checkAll">全选</th>
+                <th>图片</th>
+                <th>名字</th>
+                <th >价格</th>
+                <th width="5">数量</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td><img src=""></td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr> -->
+        </tbody>
+       
+    </table>
+    
+    <b class="c">
+        <a href="shbl3.html">去结算</a>
+    </b>
+     <div id=footer> 
+            <div class="margin">
+                <div class="f-q">
+                    <div class="f-qt">
+                        <div class="f1">
+
+                            <div class="f-t">
+                                <img src="images/f1.jpg">
+                            </div>
+                            <div class="xswm">
+                                <a href="">
+                                    <h3>新手入门</h3>
+                                </a>
+                                <a href="">
+                                    <p>购物流程</p>
+                                </a>
+                                <a href="">
+                                    <p>会员介绍</p>
+                                </a>
+                                <a href="">
+                                    <p>常见问题</p>
+                                </a>
+                                <a href="">
+                                    <p>发票问题</p>
+                                </a>
+                                <a href="">
+                                    <p>联系客服</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f1">
+                            <div class="f-t">
+                                <img src="images/f2.jpg">
+                            </div>
+                            <div class="xswm">
+                                <a href="">
+                                    <h3>配送服务</h3>
+                                </a>
+                                <a href="">
+                                    <p>配送范围</p>
+                                </a>
+                                <a href="">
+                                    <p>配送进度</p>
+                                </a>
+                                <a href="">
+                                    <p>自提范围</p>
+                                </a>
+                                <a href="">
+                                    <p>商品有货与签收</p>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="f1">
+                            <div class="f-t">
+                                <img src="images/f3.jpg">
+                            </div>
+                            <div class="xswm">
+                                <a href="">
+                                    <h3>售后服务</h3>
+                                </a>
+                                <a href="">
+                                    <p>货到付款</p>
+                                </a>
+                                <a href="">
+                                    <p>在线支付</p>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="f1">
+                            <div class="f-t">
+                                <img src="images/f4.jpg">
+                            </div>
+                            <div class="xswm">
+                                <a href="">
+                                    <h3>商家支持</h3>
+                                </a>
+                                <a href="">
+                                    <p>退换货政策</p>
+                                </a>
+                                <a href="">
+                                    <p>退换货证明</p>
+                                </a>
+                                <a href="">
+                                    <p>退款说明</p>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="f1">
+                            <div class="f-t">
+                                <img src="images/f5.jpg">
+                            </div>
+                            <div class="xswm">
+                                <a href="">
+                                    <h3>新手入门</h3>
+                                </a>
+                                <a href="">
+                                    <p>商家入驻</p>
+                                </a>
+                                <a href="">
+                                    <p>商家规则</p>
+                                </a>
+                                <a href="">
+                                    <p>常见问题</p>
+                                </a>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="f-b">
+                        <div class="f-b-t">
+                            <b>关于我们</b><span>|</span>
+                            <b>联系我们</b><span>|</span>
+                            <b>加盟合作</b><span>|</span>
+                            <b>诚征英才</b><span>|</span>
+                            <b>友情链接</b><span>|</span>
+                            <b>新商品合作</b>
+                        </div>
+                        <div class="f-b-c">
+                            <b>百联集团有限公司版权所有</b><span>|</span>
+                            <b>客服电话 ：400-900-8080</b><span>|</span>
+                            <b>沪icp呗1502747号</b>
+
+                        </div>
+                        <div class="f-b-b">
+                            <a href=""><b>互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</b></a>
+                        </div>
+                        <div class="f-b-b-b">
+                            <a href=""><b>全渠道增值电信业务经营许可证</b></a>
+                        </div>
+                        <div class="f-b-b-b-b">
+                            <div class="f-z">
+                                <a href=""><img src="images/z1.jpg"></a>
+                                <a href=""><b>沪公网安备 31010102002366号</b></a>
+                            </div>
+
+                            <div class="f-z">
+                                <a href=""><img src="images/z2.jpg"></a>
+                                <a href=""><b>上海工商</b></a>
+                            </div>
+
+                            <div class="f-z">
+                                <a href=""> <img src="images/z3.jpg"></a>
+                                <a href=""><b>经营执照</b></a>
+                            </div>
+
+                            <div class="f-z">
+                                <a href=""><img src="images/z4.jpg"></a>
+                                <a href=""></a><b>网购评</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+</body>
+<script src="../js/cookie.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../xmzy/js/jquery.js"></script>
+<script>
+    class Car{
+        constructor() {
+            this.url = "http://localhost/xmzy/data/goods.json";
+            this.tbody = document.querySelector("tbody");
+            // 1.开启ajax
+            this.load();
+            // 6.绑定删除事件
+            this.addEvent();
+        }
+        addEvent(){
+            var that = this;
+            // 7.删除事件的委托
+            this.tbody.addEventListener("click",function(eve){
+                var e = eve || window.event;
+                var target = e.target || e.srcElement;
+                if(target.tagName == "SPAN"){
+                    // 8.保存删除时的商品id
+                    that.id = target.parentNode.parentNode.getAttribute("index");
+                    // console.log(that.id)
+                    // 9.开始删除：删除DOM，修改cookie
+                    target.parentNode.parentNode.remove();
+                    that.removeCookie();
+                }
+            })
+            // 10.修改数量事件的委托
+            this.tbody.addEventListener("input",function(eve){
+                var e = eve || window.event;
+                var target = e.target || e.srcElement;
+                if(target.type == "number"){
+                    // 11.保存修改商品的id
+                    that.id = target.parentNode.parentNode.getAttribute("index");
+                    // 保存修改商品的数量
+                    that.val = target.value;
+                    // 修改cookie
+                    that.updateCookie()
+                }
+            })
+        }
+        updateCookie(){
+            // 准备保存出数据的索引
+            var i = 0;
+            // 遍历数组，找到符合条件的数据
+            var onoff = this.goods.some((val,index)=>{
+                i = index;
+                return val.id == this.id;
+            })
+            if(onoff){
+                // 找到符合的数据之后，更新数组中的数据
+                this.goods[i].num = this.val;
+            }
+            // 将数组再设置回cookie
+            setCookie("goods",JSON.stringify(this.goods))
+        }
+        removeCookie(){
+            var i = 0;
+            var onoff = this.goods.some((val,index)=>{
+                i = index;
+                return val.id == this.id;
+            })
+            if(onoff){
+                this.goods.splice(i,1)
+            }
+            setCookie("goods",JSON.stringify(this.goods))
+        }
+        load(){
+            var that = this;
+            ajax({
+                url:this.url,
+                success:function(res){
+                    // 2.解析数据
+                    that.res = JSON.parse(res);
+                    // 3.此处假设cookie是异步，那么必须在ajax成功后，请求cookie
+                    that.getCookie();
+                }
+            })
+        }
+        getCookie(){
+            this.goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+            // 4.cookie请求成功后，再去渲染页面
+            this.display();
+        }
+        display(){
+            // 渲染页面时，ajax和cookie必然已经成功
+            // console.log(this.res)
+            // console.log(this.goods)
+            var str = "";
+            // 5.遍历ajax的数据和cookie的数据
+            for(var i=0;i<this.res.length;i++){
+                for(var j=0;j<this.goods.length;j++){
+                    // 比较id
+                    if(this.res[i].goodsId == this.goods[j].id){
+                        // 拼接数据
+                        str += `<tr index="${this.goods[j].id}">
+                                    <td><input type="checkbox" class="checkOne"></td>
+                                    <td><img src="${this.res[i].img}"></td>
+                                    <td>${this.res[i].name}</td>
+                                    <td>${this.res[i].price * this.goods[j].num}</td>
+                                    <td><input type="number" value="${this.goods[j].num}" min=1 /></td>
+
+                                    <td><span><p>移入收藏夹</p>
+                                        <b>删除</b></span></td>
+                                </tr>`;
+                    }
+                }
+            }
+            this.tbody.innerHTML = str;
+        }
+    }
+    new Car;
+
+    let checkAll = document.getElementById('checkAll')
+    let tbody = document.querySelector('tbody');
+    $.getJSON('data/czt.json', function(data){
+        // console.log(data);
+        for(var i in localStorage){
+            // console.log(localStorage[i])
+            if(i == 'length'){
+                break;
+            }
+            // console.log(data[i-1]);
+            tbody.innerHTML += `<tr index="${data[i-1].goodsId}">
+                                    <td><input type="checkbox" class="checkOne"></td>
+                                    <td><img src="${data[i-1].url}"></td>
+                                    <td>${data[i-1].name}</td>
+                                    <td>${data[i-1].price * localStorage[i]}</td>
+                                    <td><input type="number" class="num" value="${localStorage[i]}" min=1 /></td>
+                                    <td><span class="del">删除</span></td>
+                                </tr>`;
+            
+        }
+        let num = document.querySelectorAll('.num')
+        let del = document.querySelectorAll('.del');
+        for (let i = 0; i < del.length; i++){
+            del[i].onclick = function(){
+                let index = del[i].parentNode.parentNode.getAttribute("index");
+                localStorage.removeItem(index);
+            }
+            num[i].onchange = function(e) {
+                console.log(1)
+                localStorage.setItem(del[i].parentNode.parentNode.getAttribute("index"), e.target.value)
+            }
+        }
+    })
+    checkAll.onclick = function(){
+        //console.log(checkAll.checked)
+        let checkOne = document.querySelectorAll('.checkOne');
+        for (let i = 0; i < checkOne.length; i++){
+            //console.log(checkOne[i].checked)
+            checkOne[i].checked = checkAll.checked;
+            //console.log(checkOne[i].checked)
+        }
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,16 @@
+#header{margin-top:30px;}
+#header b{margin-left:200px;}
+#header span{margin-left:50px;line-height: 30px;
+    font-size:28px;}
+#nav{width:1423px;height:600px;
+   background:url(../images/url.jpg)
+}
+#nav .nav-c{width:500px;height:545px;border: 6px solid #e2e2e2;
+margin:0 auto;margin-top:60px;}
+#nav .nav-c-t{margin-top:30px} 
+#nav .nav-c-t span{line-height: 20px;
+margin-left: 45px;font-size: 18px;color:#333;cursor: pointer;}  
+#nav .nav-c-t b{color:#FF4A4A;font-weight: 700;
+line-height: 20px;margin-left: 195px;font-weight: 700;font-size: 18px;} 
+#nav .nav-c-b{margin:90px 0 0 100px;}
+#nav .nav-c-b input{margin:10px 0;width:300px;height:36px;padding-left: 35px;font-size: 12px;color:#ccc}

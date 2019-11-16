@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/fdj.css">
+</head>
+<body>
+        <div id=header>
+                <div class="margin">
+                   <div class="header-l">
+                       <img src="images/tl.png"/>
+                       <span>百联集团旗下全渠道电商平台</span>
+                      <span>网站导航</span>
+                       <a href=""><span>消息</span></a> 
+                   </div>
+           
+                   <div class="header-r">
+                       <a href=""><img src="images/t2.png"></a>
+                       <a href="qdl.html"><span>请登录</span></a>
+                       <a href="dl.html"><span>注册</span></a>
+                       <a href=""><span>我的订单</span></a>
+                       <a href=""><span class="wdbl">我的百联
+                           <div class="wddd">
+                                  <p>我的订单</p>
+                                  <p>我的订单</p>
+                                  <p>我的订单</p>
+                                  <p>我的订单</p>
+                                  <p>我的订单</p>
+                           </div>       
+                       </span></a>
+                       <a href=""><span>充值缴费</span></a>
+                       <a href=""><span>客户服务</span></a>
+                       <a href=""><span>掌声百联</span></a>
+                       <a href=""><span>购物车</span></a>
+                      </div>
+                   </div>
+                </div> 
+
+                <div id="nav">
+                        <div class="margin">
+                            <div class="tp1">
+                            <a href=""><img src="images/logo.png" ></a>
+                            </div>
+                            <div class="tp2">
+                            <a href=""><img src="images/sj.png" ></a>
+                            </div>
+                            <div class="inp">
+                           <input type="text" class="text1" value="酱油">
+                           <input type="button" class="button2" value="搜索">
+                             <div class="inp-b">
+                                 <b><a href="">飞利浦</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">方便面</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">料酒</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">面包</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">可乐</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">花露</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">酱油</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">啤酒</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">五粮液</a></b>
+                                 <sapn>|</sapn>
+                                 <b><a href="">兰蔻</a></b>
+                             </div>
+                            </div>
+                        </div>   
+                       </div> 
+                    
+
+                       <div id="nav-tt">
+                            
+                                <div class="t">
+                                    <b><a href="">所有商品分类</a></b>
+                                    <b><a href="">生活用品</a></b>
+                                    <b><a href="">24H百货</a></b>
+                                    <b><a href="">全球购</a></b>
+                                    <b><a href="">精品闪购</a></b>
+                                    <b><a href="">电器城</a></b>
+                                    <b><a href="">百联卡</a></b>
+                                    <b><a href="">百联到家</a></b>
+                                    </div>
+                                
+                        </div>
+        <div id="fdj" style="position: relative;width: 316px;height: 286px;margin: 150px 0 0 50px;">
+            <img src="" alt="" id="smallImg" style="width: 316px;">
+            <div id="jingzi" style="display: none;width: 158px;height: 143px;position: absolute;background: #000;opacity: .3;top: 0;left: 0;"></div>
+        </div>                 
+        <div id="fdj1" style="display: none;position: fixed;top: 200px;left: 450px; width: 316px;height: 286px;;overflow: hidden;">
+            <img src="" alt="" id="bigImg" style="width: 732px;height: 594.82px;position: absolute;top: 0;left: 0;">
+        </div>                        
+        <div class="boxr" style="position: fixed;top: 400px;right: 350px;">
+            <b id="goodsname">
+            商品名字
+            </b>
+            <div class="boxc">
+            <b>销售价</b>
+            <span id="goodsprice">商品价格</span>
+            </div> 
+            <br/><br/><br/>
+            
+            <div class="gmsl">
+                <b>购买数量</b>
+                <input type="button" value="-" class="j"/>
+                <input type="button" value="1" class="sz"/> 
+                <input type="button" value="+" class="jj"/>&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                <i>每单限购3件</i>
+            </div><br/><br/><br/><br/>
+            <div class="ljgm">
+                <a class="l" style="background:red;width:120px;height:25px;
+                display: inline-block;text-align: center;line-height: 25px;" id="buyNow">立即购买</a>
+                <a id="toCart" class="c" style="cursor: pointer;background:red;width:120px;height:25px;
+                display: inline-block;text-align: center;line-height: 25px;">加入购物车</a>
+            </div>
+        </div>
+        
+        
+    </div>
+                    
+</body>
+<script src="../xmzy/js/jquery.js"></script>
+<script src="../js/ajax.js"></script>
+<script>
+    let goodsname = document.getElementById('goodsname');
+    let goodsprice = document.getElementById('goodsprice');
+    let id = window.location.href.slice(31);
+    let obj = {}
+    let smallImg = document.getElementById('smallImg');
+    let bigImg = document.getElementById('bigImg');
+    let small = document.getElementById('jingzi');
+    let big = document.getElementById('fdj1');
+    let box = document.getElementById("fdj");
+    box.onmouseover = function(e) {
+	e = e || window.event;
+	big.style.display = "block";
+	small.style.display = "block";
+	box.onmousemove = function(e) {
+		e = e || window.event;
+		var left = e.pageX - box.offsetLeft - small.clientWidth / 2;
+		var top = e.pageY - box.offsetTop - small.clientHeight / 2;
+		if (left < 0) {
+			left = 0;
+		} else if (left > (box.clientWidth - small.clientWidth)) {
+			left = box.clientWidth - small.clientWidth + "px";
+		}
+		if (top < 0) {
+			top = 0;
+		} else if (top > (box.clientHeight - small.clientHeight)) {
+			top = box.clientHeight - small.clientHeight + "px";
+		}
+		small.style.left = left + "px";
+		bigImg.style.left = -2 * small.offsetLeft + "px";
+		small.style.top = top + "px";
+		bigImg.style.top = -2 * small.offsetTop + "px";
+	}
+}
+
+    box.onmouseout = function() {
+        big.style.display = "none";
+        small.style.display = "none";
+    }
+        class shop{
+            constructor(){
+                this.bx=document.querySelector("#box"),
+                this.url = "./data/czt.json";
+                this.load()
+               
+            }
+
+
+          
+
+
+
+            load(){
+                ajax({
+                   url:this.url,
+                    success:(res)=>{
+                        this.res=JSON.parse(res)
+                        console.log(this.res[id-1])
+                        obj = this.res[id-1];
+                        smallImg.src = obj.url;
+                        bigImg.src = obj.url;
+                        goodsname.innerHTML = obj.name;
+                        goodsprice.innerHTML = '￥' + obj.price;
+                    }
+                })
+            }
+        }
+   
+        new shop()
+        toCart.onclick = function() {
+	        if (localStorage.getItem(id)) {
+		        localStorage.setItem(id, localStorage.getItem(id) - 0 + 1)
+	    } else {
+		localStorage.setItem(id, 1)
+	        }
+        }
+        buyNow.onclick = function(){
+            if (localStorage.getItem(id)) {
+		        localStorage.setItem(id, localStorage.getItem(id) - 0 + 1)
+	    } else {
+		localStorage.setItem(id, 1)
+            }
+        window.location.href='car.html';
+        }
+    </script>
+</html>

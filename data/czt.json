@@ -1,0 +1,27 @@
+[
+{           "name":"李施德林 冰蓝劲爽漱口水 250ml",
+            "price":"21",
+            "url":"images/c.jpg",
+            "goodsId":"1"
+},
+{           "name":"伊莱克斯 冰箱 4kg",
+            "price":"33",
+            "url":"images/h19.jpg",
+            "goodsId":"2"
+},
+{           "name":"可口可乐  500g",
+            "price":"35",
+            "url":"images/c3.jpg",
+            "goodsId":"3"
+},
+{           "name":"清风纸巾  500g",
+            "price":"78",
+            "url":"images/c4.jpg",
+            "goodsId":"4"
+},
+{           "name":"纸巾  500g",
+            "price":"66",
+            "url":"images/c5.jpg",
+            "goodsId":"5"
+}     
+]

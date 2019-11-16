@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/dl.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="margin">
+            <b><img src="images/sy.jpg"></b>  
+            <span>欢迎登录</span> 
+        </div> 
+    </div>
+    <div id="nav">
+        <div class="nav-c">
+            <div class="nav-c-t">
+                    <span>扫码登录</span>
+                    <b>注册登录</b>
+            </div>
+            <div class="nav-c-b">
+                <input type="text" placeholder="用户名/手机号/邮箱" id="b1"><span></span></br>
+                <input type="password" id="b2" placeholder="密码"><span></span><br>
+          <!-- <input type="button" value="登录" id="dl" style="
+        
+           border:none; margin-left:20px; color: red;text-align: center;"/> -->
+           <button id="dl">登录</button>
+           </div>
+    </div>
+    
+</body>
+ <script>
+    var odlcg=document.getElementById("dl")
+    //console.log(odlcg)
+     var odl=document.getElementById("b1")
+     //console.log(odl)
+     var omm=document.getElementById("b2")
+
+
+      odlcg.onclick = function() {  
+         console.log(1)
+         var that=this;
+        // odl.onblur=function(){
+             that.t = localStorage.getItem('name');
+             console.log(1)
+            console.log(that.t)
+            console.log(that.value)
+
+            if(that.t === odl.value){
+                // omm.onblur=function(){
+                    var t1 = localStorage.getItem('password')
+                    if (t1 === omm.value) {
+                        alert("登录成功")
+                        window.location.href = 'http://localhost/xmzy/shbl.html'
+                    }
+                }
+
+
+
+
+
+
+
+            // } else {
+                // return
+            // }
+        // } 
+    }   
+//   var aReg=/\d/;
+//     if(aReg.test(this.value)){
+//         a=1;
+//     }
+//   var bReg=/[a-zA-Z]/  
+//     if(bReg.test(this.value)){
+//         b=1;
+//     }
+//   var cReg=/[\W]/  
+//     if(cReg.test(this.value)){
+//         c=1;
+//  }
+//    switch(a+b+c){
+//         case 1:
+//             this.nextElementSibling.innerHTML="简单";break;
+//         case 2:
+//             this.nextElementSibling.innerHTML="一般";break;
+//         case 3:
+//             this.nextElementSibling.innerHTML="困难";break;
+//    }
+
+
+
+// ;(function(){
+//     if(window.localStorage.userArr){//判断是否存在
+// 		var array = JSON.parse(window.localStorage.userArr);
+// 	}else{
+// 		array = [];//创建一个新数组
+// 	}
+
+
+
+//      odlcg.onclick = function(){
+//         var ouser = document.querySelector("#bl").value;
+//         //console.log(odlcg)
+// 		var opass = document.querySelector("#b2").value;
+		
+// 		var isHad = false;//定义一个开关变量
+// 		var index = 0 ; //定义一个下标确定用户
+// 		//遍历数组进行匹配
+// 		for(var i =0;i<array.length;i++){
+// 			if(ouser==array[i].useval){//有这个账号
+// 				isHad=true;
+// 				index=i;
+ 
+// 			}
+// 		}
+		
+// 		if(isHad){//如果存在
+// 			if(opass==array[index].passval){
+// 				alert("登录成功");
+//                 setCookie("s2","bb")
+//                 setCookie("usename",ouser)
+                
+//                 window.location.href = "http://localhost/xmzy/dl.html";
+// 			}else{
+// 				alert("密码错误");
+// 			}
+// 		}else{//账号不存在或输入错误
+// 			alert('账号不存在');
+// 		}
+// 	}
+// })();
+ </script>
+</html>
